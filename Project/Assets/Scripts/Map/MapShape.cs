@@ -17,7 +17,7 @@ public class MapShape : MonoBehaviour
         public Vector3 End;
     }
 
-    private List<Transform> m_nodes = default;
+    private List<Transform> m_nodes = new List<Transform>();
 
     public IEnumerable<Transform> Nodes { get { return m_nodes; } }
 
