@@ -6,6 +6,10 @@ public class Nonogram : MonoBehaviour
 {
     public bool completed = false;
 
+    public GameObject parent;
+
+    private Dictionary<(bool, int), List<GameObject>> sides = new Dictionary<(bool, int), List<GameObject>>();
+
     public GameObject sampleObject;
     public GameObject sampleSide;
     public string jsonFileName;
@@ -20,21 +24,15 @@ public class Nonogram : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        string json = getJsonFromFile(jsonFileName);
-        if (json != "")
+        List<List<int>> map = new List<List<int>>();
+        for (int i = 0; i < 4; i++)
         {
-            
-        }
-
-        Dictionary<int, List<int>> map = new Dictionary<int, List<int>>();
-        for (int i = 0; i < 5; i++)
-        {
-            map[i] = new List<int>();
-            map[i].Add(Random.Range(0, 2));
-            map[i].Add(Random.Range(0, 2));
-            map[i].Add(Random.Range(0, 2));
-            map[i].Add(Random.Range(0, 2));
-            map[i].Add(Random.Range(0, 2));
+            var row = new List<int>();
+            for (int y = 0; y < 4; y++)
+            {
+                row.Add(Random.Range(0, 2));
+            }
+            map.Add(row);
         }
 
         createGrid(map);
@@ -68,27 +66,29 @@ public class Nonogram : MonoBehaviour
         //createGrid(map);
     }
 
-    private void createGrid(Dictionary<int, List<int>> map)
+    private void createGrid(List<List<int>> map)
     {
-        foreach (KeyValuePair<int, List<int>> hori in map)
+        for (int row = 0; row < map.Count; row++)
         {
-            if (hori.Key > maxPos.y)
+            if (row > maxPos.y)
             {
-                maxPos.y = hori.Key;
-                maxPos.x = hori.Value.Count-1;
+                maxPos.y = row;
+                maxPos.x = map[row].Count - 1;
             }
             List<int> numbers = new List<int>();
             int last = -2;
-            for(int i = 0; i < hori.Value.Count; i++)
+            for (int i = 0; i < map[row].Count; i++)
             {
-                GridPos pos = new GridPos(i, hori.Key);
+                GridPos pos = new GridPos(i, row);
                 GameObject g = Instantiate(sampleObject);
                 g.GetComponent<NongramTile>().setGridPos(pos);
                 g.transform.position = pos.convertToVector3(xScale, yScale);
                 grid[pos] = g;
-                if (hori.Value[i] == 1)
+                g.transform.SetParent(parent.transform);
+
+                if (map[row][i] == 1)
                 {
-                    if (last == i-1)
+                    if (last == i - 1)
                     {
                         numbers[numbers.Count - 1]++;
                     }
@@ -101,12 +101,20 @@ public class Nonogram : MonoBehaviour
                 }
             }
 
-            for (int i = 0; i < numbers.Count; i++)
+            if (numbers.Count != 0)
             {
-                GameObject side = Instantiate(sampleSide);
-                side.GetComponent<SideBar>().setText(numbers[i]);
-                side.transform.position = new Vector3(-xScale * numbers.Count + xScale * i, hori.Key * yScale, 0);
+                List<GameObject> thisSide = new List<GameObject>(); 
+                for (int i = 0; i < numbers.Count; i++)
+                {
+                    GameObject side = Instantiate(sampleSide);
+                    side.GetComponent<SideBar>().setText(numbers[i]);
+                    side.transform.position = new Vector3(-xScale * numbers.Count + xScale * i, row * yScale, 0);
+                    side.transform.SetParent(parent.transform);
+                    thisSide.Add(side);
+                }
+                sides[(true, row)] = thisSide;
             }
+            
         }
 
         for (int x = 0; x <= maxPos.x; x++)
@@ -129,12 +137,16 @@ public class Nonogram : MonoBehaviour
                 }
             }
 
+            List<GameObject> thisSide = new List<GameObject>();
             for (int i = 0; i < numbers.Count; i++)
             {
                 GameObject side = Instantiate(sampleSide);
                 side.GetComponent<SideBar>().setText(numbers[i]);
                 side.transform.position = new Vector3(x * xScale, yScale * (maxPos.y+1) + yScale * i, 0);
+                side.transform.SetParent(parent.transform);
+                thisSide.Add(side);
             }
+            sides[(false, x)] = thisSide;
         }
     }
 
@@ -168,6 +180,7 @@ public class Nonogram : MonoBehaviour
             }
         }
         completed = true;
+        uncrossAllTiles();
         return true;
     }
 
@@ -181,6 +194,20 @@ public class Nonogram : MonoBehaviour
             {
                 gtile.setTileCross();
             }
+        }
+
+        Debug.Log(sides[(hori, val)].Count);
+        for (int i = 0; i < sides[(hori, val)].Count; i++)
+        {
+            sides[(hori, val)][i].GetComponent<SideBar>().crossOut(true);
+        }
+    }
+
+    private void uncrossAllTiles()
+    {
+        foreach(var tile in grid)
+        {
+            tile.Value.GetComponent<NongramTile>().uncrossTile();
         }
     }
 

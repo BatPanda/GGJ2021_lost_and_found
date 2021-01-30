@@ -22,4 +22,9 @@ public class SideBar : MonoBehaviour
     {
         textObject.GetComponent<TextMesh>().text = number.ToString();
     }
+
+    public void crossOut(bool cross)
+    {
+        textObject.GetComponent<TextMesh>().color = (cross ? Color.grey : Color.white);
+    }
 }

@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completed: 0
+  parent: {fileID: 92171571}
   sampleObject: {fileID: 7957269770421341972, guid: ef220f3d45126fa40a0a4ca17361bccf,
     type: 3}
   sampleSide: {fileID: 8190991660512077419, guid: fdf302242fc62434e8f453eaccb75a54,

@@ -42,7 +42,7 @@ public class NongramTile : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             crossed = !crossed;
-            if (!crossed)
+            if (crossed)
             {
                 setTileCross();
             }
@@ -50,6 +50,7 @@ public class NongramTile : MonoBehaviour
             {
                 sprite.sprite = deactivatedSprite;
             }
+
         }
     }
 
@@ -58,6 +59,15 @@ public class NongramTile : MonoBehaviour
         activated = false;
         sprite.sprite = cross;
         crossed = true;
+    }
+
+    public void uncrossTile()
+    {
+        if (crossed)
+        {
+            activated = false;
+            sprite.sprite = deactivatedSprite;
+        }
     }
 
     public void setGridPos(GridPos _pos)
