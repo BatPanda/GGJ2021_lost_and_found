@@ -2002,6 +2002,16 @@ PrefabInstance:
       propertyPath: items.Array.data[0].big_nonogram.b14_14
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[0].nonogram_size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[0].medium_nonogram.b00
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 724608b78f271f344a650a4986bb0aee, type: 3}
 --- !u!1 &1126454287
@@ -3021,6 +3031,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3487537676250488766, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5258209388129713142, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
       propertyPath: markerSample
@@ -3032,9 +3047,9 @@ PrefabInstance:
       propertyPath: timeBetweenMarkers
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3487537676250488766, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+    - target: {fileID: 1652575505959327652, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
-      propertyPath: m_MaskInteraction
+      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
