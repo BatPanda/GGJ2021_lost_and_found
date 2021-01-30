@@ -6,6 +6,9 @@ public class FollowCursor : MonoBehaviour
 {
     private void Update()
     {
-        transform.position = Input.mousePosition;
+        Vector3 position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        position.z = 0;
+
+        transform.position = position;
     }
 }
