@@ -9,6 +9,7 @@ public class BubbleText : MonoBehaviour
     public SpriteRenderer bubble;
     private Vector2 baseSize;
     public int offSet = 50;
+    public float yOffset = 0.26f;
     public float maxSize = 4;
 
     void Start()
@@ -62,7 +63,7 @@ public class BubbleText : MonoBehaviour
             width = newText.Item1 + offSet * 2;
         }
         Debug.Log(width);
-        bubble.size = new Vector2(width * 0.001f, baseSize.y + cutting * 0.12f);
+        bubble.size = new Vector2(width * 0.001f, yOffset + cutting * 0.12f);
     }
 
     private (int, string) cutMessage(string message, int amountToCut)
