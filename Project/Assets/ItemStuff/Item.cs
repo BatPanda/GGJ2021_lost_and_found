@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Item : MonoBehaviour
 {
@@ -11,6 +6,7 @@ public class Item : MonoBehaviour
     public SpriteRenderer sprite_renderer;
 
     private void Start() {
+        sprite_renderer = GetComponent<SpriteRenderer>();
         sprite_renderer.sprite = item_data.sprite;
     }
 }
