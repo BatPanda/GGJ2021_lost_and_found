@@ -2,9 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Functions youll need:
+// updateText(string text) -> will display the text message.
+// setVisibility(bool visible) -> true = it will be visible
+// flipTextBubble(bool flip) -> true = arrow will be bottom right
+
 public class BubbleText : MonoBehaviour
 {
-
+    public bool flip = false;
+    public bool visible = true;
     public TextMesh text;
     public SpriteRenderer bubble;
     private Vector2 baseSize;
@@ -16,17 +22,27 @@ public class BubbleText : MonoBehaviour
     {
         baseSize = bubble.size;
         this.updateText("example text. WARNING. this is an example text");
+        setVisibility(visible);
+        flipTextBubble(!flip);
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+    }
+
+    public void setVisibility(bool _visible)
+    {
+        visible = _visible;
+
+        if (_visible)
         {
-            flipTextBubble(false);
+            bubble.enabled = true;
+            text.color = new Color(0, 0, 0, 1);
         }
-        if (Input.GetMouseButtonDown(1))
+        else
         {
-            flipTextBubble(true);
+            bubble.enabled = false;
+            text.color = new Color(0, 0, 0, 0);
         }
     }
 
@@ -36,15 +52,16 @@ public class BubbleText : MonoBehaviour
          {
              if (!bubble.flipX)
              {
-                 bubble.transform.position = new Vector3(bubble.transform.position.x - bubble.size.x * bubble.transform.localScale.x, bubble.transform.position.y, bubble.transform.position.z);
+                 //bubble.transform.position = new Vector3(bubble.transform.position.x - bubble.size.x * bubble.transform.localScale.x, bubble.transform.position.y, bubble.transform.position.z);
                  text.transform.position = new Vector3(text.transform.position.x + bubble.size.x * bubble.transform.localScale.x, text.transform.position.y, text.transform.position.z);
              }
              else
              {
-                 bubble.transform.position = new Vector3(bubble.transform.position.x + bubble.size.x * bubble.transform.localScale.x, bubble.transform.position.y, bubble.transform.position.z);
+                 //bubble.transform.position = new Vector3(bubble.transform.position.x + bubble.size.x * bubble.transform.localScale.x, bubble.transform.position.y, bubble.transform.position.z);
                  text.transform.position = new Vector3(text.transform.position.x - bubble.size.x * bubble.transform.localScale.x, text.transform.position.y, text.transform.position.z);
              }
          }
+        
         bubble.flipX = !pointingRight;
 
         

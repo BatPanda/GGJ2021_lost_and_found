@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_coutdownImage: {fileID: 352310677}
   m_countdownText: {fileID: 1522212073}
-  m_secondsUntilGameOver: 5
+  m_secondsUntilGameOver: 120
   OnGameOver:
     m_PersistentCalls:
       m_Calls:
@@ -612,6 +612,17 @@ PrefabInstance:
     - target: {fileID: 1309734442185191653, guid: 06f685eca36426e438cfd3e538800a6c,
         type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804540909601577106, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: markerSample
+      value: 
+      objectReference: {fileID: 307749313866604259, guid: fce8b8239e9f4a84e94354f256c42372,
+        type: 3}
+    - target: {fileID: 2804540909601577106, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1389,6 +1400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2a43e12934317544b55ee0086ad7a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  markerSample: {fileID: 307749313866604259, guid: fce8b8239e9f4a84e94354f256c42372,
+    type: 3}
 --- !u!331 &1957115971
 SpriteMask:
   m_ObjectHideFlags: 0
@@ -1598,6 +1611,17 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5258209388129713142, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: markerSample
+      value: 
+      objectReference: {fileID: 307749313866604259, guid: fce8b8239e9f4a84e94354f256c42372,
+        type: 3}
+    - target: {fileID: 5258209388129713142, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: timeBetweenMarkers
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3487537676250488766, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}

@@ -5778,6 +5778,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2a43e12934317544b55ee0086ad7a4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  markerSample: {fileID: 307749313866604259, guid: fce8b8239e9f4a84e94354f256c42372,
+    type: 3}
 --- !u!1 &1309734442190315872
 GameObject:
   m_ObjectHideFlags: 0
