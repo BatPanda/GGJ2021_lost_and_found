@@ -92,6 +92,8 @@ GameObject:
   - component: {fileID: 5258209388129713142}
   - component: {fileID: 7947602457036093659}
   - component: {fileID: 6312357662773171754}
+  - component: {fileID: 7567493524095987789}
+  - component: {fileID: 5888780893023919479}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -165,7 +167,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.04138279}
   serializedVersion: 2
   m_Radius: 0.5
 --- !u!1001 &3643787252484785230
