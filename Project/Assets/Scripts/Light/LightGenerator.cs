@@ -205,7 +205,6 @@ public class LightGenerator : MonoBehaviour
                     }
                 }
             }
-            Debug.Log($"{node} -> {intersectionCount}");
 
             if (intersectionCount == 0)
             {
