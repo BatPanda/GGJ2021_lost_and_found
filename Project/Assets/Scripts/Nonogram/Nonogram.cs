@@ -38,34 +38,6 @@ public class Nonogram : MonoBehaviour
         createGrid(map);
     }
 
-    private string getFilePath(string name)
-    {
-        return Application.persistentDataPath + "/" + name;
-    }
-
-    private string getJsonFromFile(string name)
-    {
-        Debug.Log(name);
-        
-        var sr = Resources.Load<TextAsset>(name);
-
-        //var sr = new StreamReader(Application.dataPath + "/" + fileName);
-        string fileContents = sr.text;
-
-        return fileContents;
-    }
-
-    private void loadNonogramFromJson(string json)
-    {
-        List<int> map = JsonUtility.FromJson<List<int>>(json);
-        foreach(var m in map)
-        {
-            Debug.Log(m);
-        }
-        Debug.Log("FINISHED");
-        //createGrid(map);
-    }
-
     private void createGrid(List<List<int>> map)
     {
         for (int row = 0; row < map.Count; row++)
@@ -196,7 +168,6 @@ public class Nonogram : MonoBehaviour
             }
         }
 
-        Debug.Log(sides[(hori, val)].Count);
         for (int i = 0; i < sides[(hori, val)].Count; i++)
         {
             sides[(hori, val)][i].GetComponent<SideBar>().crossOut(true);
