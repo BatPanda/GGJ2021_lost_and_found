@@ -1165,12 +1165,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[1].name
-      value: 
+      value: Portrait of you
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[1].description
-      value: 
+      value: "It\u2019s me! This was painted years ago"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1195,12 +1195,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[2].name
-      value: 
+      value: Portrait of a dog
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[2].description
-      value: 
+      value: Rest in peace, Bisco
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1225,12 +1225,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[3].name
-      value: 
+      value: Portrait of a flower
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[3].description
-      value: 
+      value: Tulips, I think?
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1255,12 +1255,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[4].name
-      value: 
+      value: Blue Vase
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[4].description
-      value: 
+      value: My parent use to keep keys under this, shame it was always inside
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1285,12 +1285,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[5].name
-      value: 
+      value: Red Vase
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[5].description
-      value: 
+      value: "I don\u2019t think this vase was ever used. I wonder why"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1315,12 +1315,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[6].name
-      value: 
+      value: Ornate vase with flowers
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[6].description
-      value: 
+      value: My parent always did love tulips
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1345,12 +1345,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[7].name
-      value: 
+      value: Cracked vase
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[7].description
-      value: 
+      value: "I remember braking this\u2026 I got in so much trouble!"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1375,12 +1375,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[8].name
-      value: 
+      value: Violin
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[8].description
-      value: 
+      value: I always wished I could play this. I think my parent could
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1405,12 +1405,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[9].name
-      value: 
+      value: Haunted Trumpet
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[9].description
-      value: 
+      value: "Sometimes I hear it play itself\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1435,12 +1435,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[10].name
-      value: 
+      value: Saxophone
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[10].description
-      value: 
+      value: Best of the best!
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1465,12 +1465,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[11].name
-      value: 
+      value: Piano
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[11].description
-      value: 
+      value: "I loved this thing when I could remember how to play\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1495,12 +1495,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[12].name
-      value: 
+      value: Diamond Necklace
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[12].description
-      value: 
+      value: How did my parent afford this?!
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1525,12 +1525,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[13].name
-      value: 
+      value: Emerald Necklace
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[13].description
-      value: 
+      value: Three emeralds beautifully cut.
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1555,12 +1555,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[14].name
-      value: 
+      value: Golden Watch
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[14].description
-      value: 
+      value: This thing weighs a ton!
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1585,12 +1585,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[15].name
-      value: 
+      value: Glow in the dark Watch
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[15].description
-      value: 
+      value: "I\u2019m pretty sure this is a hazard"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1615,12 +1615,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[16].name
-      value: 
+      value: Warm Slippers
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[16].description
-      value: 
+      value: Shuffling from a to b has never been so comfortable.
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1645,12 +1645,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[17].name
-      value: 
+      value: "Captain\u2019s Hat"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[17].description
-      value: 
+      value: "I don\u2019t recall them owning a boat, perhaps they won it?"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1675,12 +1675,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[18].name
-      value: 
+      value: Poncho
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[18].description
-      value: 
+      value: A cosy wearable blanket of sorts.
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1705,12 +1705,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[19].name
-      value: 
+      value: Red Scarf
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[19].description
-      value: 
+      value: "My parent\u2019s favourite scarf, also their only scarf"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1735,12 +1735,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[20].name
-      value: 
+      value: Dull Rapier
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[20].description
-      value: 
+      value: I wonder if it was ever sharp, it looks nice though
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1765,12 +1765,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[21].name
-      value: 
+      value: Sacrificial Dagger
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[21].description
-      value: 
+      value: I have no idea what this was used for
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1795,12 +1795,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[22].name
-      value: 
+      value: Spoon
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[22].description
-      value: 
+      value: Spoons are easy to overlook but they can be very useful!
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1825,12 +1825,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[23].name
-      value: 
+      value: Fire Poker
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[23].description
-      value: 
+      value: Prodding burning wood since before I was born
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1855,12 +1855,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[24].name
-      value: 
+      value: Stone Mask
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[24].description
-      value: 
+      value: Does this mask have fangs? How Bizarre!
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1885,12 +1885,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[25].name
-      value: 
+      value: Obsidian Key
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[25].description
-      value: 
+      value: My parent told me it could open any door, with enough effort
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1915,12 +1915,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[26].name
-      value: 
+      value: Glass Clock
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[26].description
-      value: 
+      value: "I don\u2019t think its ever gone slow. Always accurate"
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1945,12 +1945,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[27].name
-      value: 
+      value: Fallen Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[27].description
-      value: 
+      value: Like a normal rock, but from space!
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -1975,12 +1975,12 @@ PrefabInstance:
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[0].name
-      value: 
+      value: Portrait of a Friend
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
       propertyPath: items.Array.data[0].description
-      value: 
+      value: Not sure who this is, but my parent spoke fondly of them
       objectReference: {fileID: 0}
     - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
         type: 3}
@@ -2011,6 +2011,294 @@ PrefabInstance:
         type: 3}
       propertyPath: items.Array.data[0].medium_nonogram.b00
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[0].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e68878ff316b014d9251cc67efd254f,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[1].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e68878ff316b014d9251cc67efd254f,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[2].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e68878ff316b014d9251cc67efd254f,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[3].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7e68878ff316b014d9251cc67efd254f,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[4].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d47c9eb90c4f3442aaf9a86a2253858,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[4].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[5].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d47c9eb90c4f3442aaf9a86a2253858,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[5].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[6].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d47c9eb90c4f3442aaf9a86a2253858,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[6].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[7].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9d47c9eb90c4f3442aaf9a86a2253858,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[7].type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[8].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e3cfa16273f4af45a2c9b92a57cd632,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[8].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[9].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e3cfa16273f4af45a2c9b92a57cd632,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[9].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[10].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e3cfa16273f4af45a2c9b92a57cd632,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[10].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[11].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e3cfa16273f4af45a2c9b92a57cd632,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[11].type
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[12].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4a0c55ca41540e4ca551a4b014212e5,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[12].type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[13].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4a0c55ca41540e4ca551a4b014212e5,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[13].type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[14].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4a0c55ca41540e4ca551a4b014212e5,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[14].type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[15].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a4a0c55ca41540e4ca551a4b014212e5,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[15].type
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[16].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e18aaad21f4c1974f9d09b4eff6accdb,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[16].type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[17].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e18aaad21f4c1974f9d09b4eff6accdb,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[17].type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[18].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e18aaad21f4c1974f9d09b4eff6accdb,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[18].type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[19].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e18aaad21f4c1974f9d09b4eff6accdb,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[19].type
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[20].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f7f0ff3f7cfcd544ba760e35bfad109b,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[20].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[21].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f7f0ff3f7cfcd544ba760e35bfad109b,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[21].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[22].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f7f0ff3f7cfcd544ba760e35bfad109b,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[22].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[23].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f7f0ff3f7cfcd544ba760e35bfad109b,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[23].type
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[24].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98722089ec39386408a27ea8ad16d685,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[24].type
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[25].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98722089ec39386408a27ea8ad16d685,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[25].type
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[26].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98722089ec39386408a27ea8ad16d685,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[26].type
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[27].sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 98722089ec39386408a27ea8ad16d685,
+        type: 3}
+    - target: {fileID: 936825498718700760, guid: 724608b78f271f344a650a4986bb0aee,
+        type: 3}
+      propertyPath: items.Array.data[27].type
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 724608b78f271f344a650a4986bb0aee, type: 3}
