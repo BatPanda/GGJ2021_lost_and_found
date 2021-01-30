@@ -32,6 +32,21 @@ public class MapShape : MonoBehaviour
         yield return new Line() { Start = node, End = m_nodes[nextIndex] };
     }
 
+    public bool ContainsPoint(Vector2 p)
+    {
+        var j = m_nodes.Count - 1;
+        var inside = false;
+        for (int i = 0; i < m_nodes.Count; j = i++)
+        {
+            var pi = m_nodes[i].position;
+            var pj = m_nodes[j].position;
+            if (((pi.y <= p.y && p.y < pj.y) || (pj.y <= p.y && p.y < pi.y)) &&
+                (p.x < (pj.x - pi.x) * (p.y - pi.y) / (pj.y - pi.y) + pi.x))
+                inside = !inside;
+        }
+        return inside;
+    }
+
     private void Update()
     {
         m_nodes = GetComponentsInChildren<Transform>().ToList();
