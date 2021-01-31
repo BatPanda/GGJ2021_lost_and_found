@@ -172,7 +172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_coutdownImage: {fileID: 352310677}
   m_countdownText: {fileID: 1522212073}
-  m_secondsUntilGameOver: 120
+  m_secondsUntilGameOver: 240
   OnGameOver:
     m_PersistentCalls:
       m_Calls:
@@ -574,7 +574,7 @@ GameObject:
   - component: {fileID: 484005916}
   m_Layer: 0
   m_Name: TextHandler
-  m_TagString: Untagged
+  m_TagString: TextHandler
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -610,6 +610,18 @@ MonoBehaviour:
   - '      ...'
   - FINE! You get 2 minutes!
   childTalking: 00010001000001000100000000
+  win: []
+  winb: 
+  partial: []
+  partialb: 
+  lose: []
+  loseb: 
+  endConversationText:
+  - wwww
+  - ee
+  - r
+  - qrmniowonrioqeruibqwr
+  endChildTalking: 01010001
 --- !u!4 &484005917
 Transform:
   m_ObjectHideFlags: 0
@@ -770,7 +782,17 @@ PrefabInstance:
     - target: {fileID: 7035557668144416263, guid: 06f685eca36426e438cfd3e538800a6c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090560265202115412, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: isEnd
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 121375414139995462, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: isEnd
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06f685eca36426e438cfd3e538800a6c, type: 3}
@@ -1092,6 +1114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7bd40e76e80a8439ca3113988651c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemNames: []
 --- !u!1001 &1093351202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9281,6 +9304,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.rgba
       value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 5940898272062908656, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5531f17ca60e6f74caf1a48c759fe9a6, type: 3}

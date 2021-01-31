@@ -15,10 +15,10 @@ public class TimerHandler : MonoBehaviour
 
     private int m_secondsLeft;
 
+    public bool ended = false;
     private void Awake()
     {
         m_secondsLeft = m_secondsUntilGameOver;
-        
     }
 
     public int startTimer()
@@ -30,7 +30,7 @@ public class TimerHandler : MonoBehaviour
 
     private IEnumerator UpdateTimer()
     {
-        while (true)
+        while (true && !ended)
         {
             yield return new WaitForSeconds(1);
             m_secondsLeft--;

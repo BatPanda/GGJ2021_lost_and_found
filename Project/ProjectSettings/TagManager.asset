@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - NonogramHandler
+  - DeciderGroup
+  - ButtonYes
+  - ButtonNo
+  - TextHandler
   layers:
   - Default
   - TransparentFX

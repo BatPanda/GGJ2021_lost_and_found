@@ -44,7 +44,7 @@ public class Item : MonoBehaviour
                 nonoGramHandler.createGrid(item_data.getNonogramData(item_data.small_nonogram).rows, this);
             }
             GameObject nonogram = nonoGramHandler.getNonogram();
-            nonogram.transform.position = transform.position;
+            nonogram.transform.position = new Vector3(transform.position.x, transform.position.y + 0.32f, -1);
             Debug.Log(transform.position);
             nonoStarted = true;
         }

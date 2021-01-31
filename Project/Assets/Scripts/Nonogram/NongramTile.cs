@@ -14,6 +14,9 @@ public class NongramTile : MonoBehaviour
     private Sprite deactivatedSprite;
     public Sprite cross;
 
+    private bool waitForUp = false;
+    private int toWait = 0;
+
     private GridPos position;
 
     // Start is called before the first frame update
@@ -28,19 +31,26 @@ public class NongramTile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (waitForUp && Input.GetMouseButtonUp(toWait))
+        {
+            waitForUp = false;
+        }
     }
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0) && !waitForUp)
         {
+            toWait = 0;
+            waitForUp = true;
             activated = !activated;
             sprite.sprite = (activated? activatedSprite : deactivatedSprite);
             Debug.Log(nonogram.checkCompletion(position));
         }
-        if (Input.GetMouseButtonDown(1))
+        if (Input.GetMouseButton(1) && !waitForUp)
         {
+            toWait = 1;
+            waitForUp = true;
             crossed = !crossed;
             if (crossed)
             {

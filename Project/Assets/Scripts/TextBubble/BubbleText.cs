@@ -24,7 +24,7 @@ public class BubbleText : MonoBehaviour
     {
         textColor = text.color;
         baseSize = bubble.size;
-        this.updateText("example text. WARNING. this is an example text");
+        //this.updateText("example text. WARNING. this is an example text");
         setVisibility(visible);
         flipTextBubble(!flip);
     }

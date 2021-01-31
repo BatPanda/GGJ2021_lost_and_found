@@ -13,13 +13,28 @@ public class TextHandler : MonoBehaviour
     public List<string> conversationText;
     public List<bool> childTalking;
 
+    public List<string> win;
+    public List<bool> winb;
+
+    public List<string> partial;
+    public List<bool> partialb;
+
+    public List<string> lose;
+    public List<bool> loseb;
+
+
+
+    public List<string> endConversationText;
+    public List<bool> endChildTalking;
+
     private int conversationPlace = 0;
     private bool completed = false;
+    private bool convoEnd = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        nextConversation();
+        nextConversation(conversationText, childTalking);
     }
 
     // Update is called once per frame
@@ -27,24 +42,30 @@ public class TextHandler : MonoBehaviour
     {
         if (!completed && Input.GetMouseButtonDown(0))
         {
-            nextConversation();
+            if (convoEnd)
+            {
+                nextConversation(endConversationText, endChildTalking);
+            }
+            else
+            {
+                nextConversation(conversationText, childTalking);
+            }
         }
     }
 
-    private void nextConversation()
+    private void nextConversation(List<string> conversation, List<bool> conversationC)
     {
-        if (conversationPlace < conversationText.Count)
+        if (conversationPlace < conversation.Count)
         {
-            if (childTalking[conversationPlace])
+            if (conversationC[conversationPlace])
             {
-                playerText.updateText(conversationText[conversationPlace]);
+                playerText.updateText(conversation[conversationPlace]);
                 if (!playerText.visible) playerText.setVisibility(true);
                 if (parentText.visible) parentText.setVisibility(false);
             }
             else
             {
-                //parentText.flipTextBubble(true);
-                parentText.updateText(conversationText[conversationPlace]);
+                parentText.updateText(conversation[conversationPlace]);
                 if (playerText.visible) playerText.setVisibility(false);
                 if (!parentText.visible) parentText.setVisibility(true);
                 parentText.flipTextBubble(false);
@@ -59,5 +80,16 @@ public class TextHandler : MonoBehaviour
             move.totalMarkers = timer.startTimer();
             completed = true;
         }
+    }
+
+    public void end()
+    {
+        timer.ended = true;
+        conversationPlace = 0;
+        completed = false;
+        convoEnd = true;
+        move.setInGame(false);
+        //nextConversation(endConversationText, endChildTalking);
+        Debug.Log("GAME END");
     }
 }

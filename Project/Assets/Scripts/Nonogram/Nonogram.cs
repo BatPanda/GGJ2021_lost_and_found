@@ -56,8 +56,21 @@ public class Nonogram : MonoBehaviour
 
         rightValues.Clear();
     }
+
+    private List<List<int>> inverseGrid(List<List<int>> map)
+    {
+        List<List<int>> newMap = new List<List<int>>();
+
+        for (int i = map.Count-1; i > 0; i--)
+        {
+            newMap.Add(map[i]);
+        }
+        return newMap;
+    }
+
     public void createGrid(List<List<int>> map, Item item)
     {
+        map = inverseGrid(map);
         parent.transform.position = new Vector3(0, 0, 0);
         deleteGrid();
         thisItem = item;
