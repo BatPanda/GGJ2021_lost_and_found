@@ -35,4 +35,23 @@ public class ChecklistManager : MonoBehaviour
             m_items[item].CompletedToggle.isOn = true;
         }
     }
+
+    public int GetNumberOfCompletedItems()
+    {
+        int num = 0;
+        foreach(var item in m_items)
+        {
+            if (item.Value.CompletedToggle.isOn)
+            {
+                num++;
+            }
+        }
+
+        return num;
+    }
+
+    public bool CollectedAllItems()
+    {
+        return GetNumberOfCompletedItems() == numberOfItems;
+    }
 }
