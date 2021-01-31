@@ -211,6 +211,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  ended: 0
 --- !u!1 &174758671
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,12 +611,31 @@ MonoBehaviour:
   - '      ...'
   - FINE! You get 8 minutes!
   childTalking: 00010001000001000100000000
-  win: []
-  winb: 
-  partial: []
-  partialb: 
-  lose: []
-  loseb: 
+  win:
+  - Amazing! You found all of my things?
+  - Yeah actually it was quite diffi-
+  - "I\u2019m sure it was tough, but I\u2019m in a hurry! Hand it over!"
+  - Oh yeah sorry
+  - Perfect! I feel like a weight has lifted somehow.
+  - "Have a good life, I\u2019ll be wishing you luck."
+  winb: 000100010000
+  partial:
+  - Hey, you found my things! Thank you!
+  - "Sorry I couldn\u2019t find everything."
+  - "Don\u2019t worry, this place is a maze and even I can\u2019t remember where I
+    put things."
+  - Is it enough?
+  - "Definitiliy, hand it over quick, I don\u2019t have long!"
+  - Safe travels!
+  partialb: 000100010001
+  lose:
+  - "You really couldn\u2019t find a single thing I use to like?"
+  - "I\u2019m really sorry, this place is a mess!"
+  - "Don\u2019t worry, I didn\u2019t need them, I\u2019ll probably just stay here
+    and haunt this place forever."
+  - Forever?
+  - "Yeah, it doesn\u2019t feel right for me to leave yet."
+  loseb: 0001000100
   endConversationText:
   - wwww
   - ee

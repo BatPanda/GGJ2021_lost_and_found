@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TextHandler : MonoBehaviour
 {
+
+    public ChecklistManager checkList;
     public TimerHandler timer;
     public PlayerMovement move;
 
@@ -89,7 +91,24 @@ public class TextHandler : MonoBehaviour
         completed = false;
         convoEnd = true;
         move.setInGame(false);
-        //nextConversation(endConversationText, endChildTalking);
-        Debug.Log("GAME END");
+
+        int collected = checkList.GetNumberOfCompletedItems();
+
+        if (collected < 1)
+        {
+            endConversationText = lose;
+            endChildTalking = loseb;
+        }
+        else if (collected < 10)
+        {
+            endConversationText = partial;
+            endChildTalking = partialb;
+        }
+        else
+        {
+            endConversationText = win;
+            endChildTalking = winb;
+        }
+
     }
 }
