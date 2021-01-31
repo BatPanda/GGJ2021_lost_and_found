@@ -838,6 +838,7 @@ public struct ItemStruct
 {
     public string name;
     public string description;
+    public Sprite typeSprite;
     public Sprite sprite;
     public ItemTypes type;
     public NonogramSizes nonogram_size;
@@ -847,8 +848,8 @@ public struct ItemStruct
 
 
 
-    public ItemStruct(string _name, string _description, Sprite _sprite, ItemTypes _type, NonogramSizes _nonogram_size, SmallNonogramStruct _small, MediumNonogramStruct _medium, BigNonogramStruct _big) { 
-        name = _name; description = _description; sprite = _sprite; type = _type; nonogram_size = _nonogram_size;  small_nonogram = _small; medium_nonogram = _medium; big_nonogram = _big;
+    public ItemStruct(string _name, string _description, Sprite _typeSprite, Sprite _sprite, ItemTypes _type, NonogramSizes _nonogram_size, SmallNonogramStruct _small, MediumNonogramStruct _medium, BigNonogramStruct _big) { 
+        name = _name; description = _description; typeSprite = _typeSprite; sprite = _sprite; type = _type; nonogram_size = _nonogram_size;  small_nonogram = _small; medium_nonogram = _medium; big_nonogram = _big;
     }
 
     public NonogramStruct getNonogramData(SmallNonogramStruct _small) => new NonogramStruct(_small);
