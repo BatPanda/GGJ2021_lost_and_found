@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     private float numberOfMarkers = 0;
 
     private bool inGame = false;
-
     void Start()
     {
         m_rigidBody = GetComponent<Rigidbody2D>();

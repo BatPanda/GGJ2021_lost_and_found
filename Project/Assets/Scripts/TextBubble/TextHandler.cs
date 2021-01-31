@@ -14,6 +14,7 @@ public class TextHandler : MonoBehaviour
     public List<bool> childTalking;
 
     private int conversationPlace = 0;
+    private bool completed = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,7 @@ public class TextHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!completed && Input.GetMouseButtonDown(0))
         {
             nextConversation();
         }
@@ -56,6 +57,7 @@ public class TextHandler : MonoBehaviour
             parentText.setVisibility(false);
             move.setInGame(true);
             move.totalMarkers = timer.startTimer();
+            completed = true;
         }
     }
 }

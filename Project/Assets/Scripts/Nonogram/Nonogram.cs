@@ -12,7 +12,6 @@ public class Nonogram : MonoBehaviour
 
     public GameObject sampleObject;
     public GameObject sampleSide;
-    public string jsonFileName;
     private Dictionary<GridPos, GameObject> grid = new Dictionary<GridPos, GameObject>();
 
     private List<GridPos> rightValues = new List<GridPos>();
@@ -24,22 +23,40 @@ public class Nonogram : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        List<List<int>> map = new List<List<int>>();
-        for (int i = 0; i < 4; i++)
-        {
-            var row = new List<int>();
-            for (int y = 0; y < 4; y++)
-            {
-                row.Add(Random.Range(0, 2));
-            }
-            map.Add(row);
-        }
-
-        createGrid(map);
     }
 
-    private void createGrid(List<List<int>> map)
+    public GameObject getNonogram()
     {
+        return parent;
+    }
+
+    public void deleteGrid()
+    {
+        foreach(var g in grid)
+        {
+            Destroy(g.Value);
+        }
+        grid.Clear();
+
+        foreach(var side in sides)
+        {
+            foreach(var s in side.Value)
+            {
+                Destroy(s);
+            }
+        }
+        sides.Clear();
+
+        rightValues.Clear();
+    }
+    public void createGrid(List<List<int>> map)
+    {
+        parent.transform.position = new Vector3(0, 0, 0);
+        deleteGrid();
+
+        maxPos = new GridPos(-1, -1);
+
+        Debug.Log("CREATING GRID");
         for (int row = 0; row < map.Count; row++)
         {
             if (row > maxPos.y)
@@ -55,6 +72,7 @@ public class Nonogram : MonoBehaviour
                 GameObject g = Instantiate(sampleObject);
                 g.GetComponent<NongramTile>().setGridPos(pos);
                 g.transform.position = pos.convertToVector3(xScale, yScale);
+                g.transform.position = new Vector3(g.transform.position.x, g.transform.position.y, -1);
                 grid[pos] = g;
                 g.transform.SetParent(parent.transform);
 
@@ -168,9 +186,12 @@ public class Nonogram : MonoBehaviour
             }
         }
 
-        for (int i = 0; i < sides[(hori, val)].Count; i++)
+        if (sides.ContainsKey((hori, val)))
         {
-            sides[(hori, val)][i].GetComponent<SideBar>().crossOut(true);
+            for (int i = 0; i < sides[(hori, val)].Count; i++)
+            {
+                sides[(hori, val)][i].GetComponent<SideBar>().crossOut(true);
+            }
         }
     }
 
