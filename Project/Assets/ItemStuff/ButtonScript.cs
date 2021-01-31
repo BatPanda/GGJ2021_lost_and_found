@@ -14,6 +14,7 @@ public class ButtonScript : MonoBehaviour
     void Start()
     {
         sprite.enabled = false;
+        GetComponent<BoxCollider2D>().enabled = false;
     }
 
     // Update is called once per frame
@@ -26,6 +27,7 @@ public class ButtonScript : MonoBehaviour
     {
         canClick = true;
         sprite.enabled = true;
+        GetComponent<BoxCollider2D>().enabled = true;
     }
 
     void OnMouseOver()

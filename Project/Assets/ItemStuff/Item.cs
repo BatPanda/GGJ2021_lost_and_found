@@ -14,6 +14,11 @@ public class Item : MonoBehaviour
     private bool nonoStarted = false;
     private bool completed = false;
 
+    public void setNonoStarted(bool _started)
+    {
+        nonoStarted = _started;
+    }
+
     private void Start() {
         GameObject[] n = GameObject.FindGameObjectsWithTag("NonogramHandler");
         nonoGramHandler = n[0].GetComponent<Nonogram>();
@@ -28,15 +33,15 @@ public class Item : MonoBehaviour
         {
             if (item_data.nonogram_size == NonogramSizes.BIG)
             {
-                nonoGramHandler.createGrid(item_data.getNonogramData(item_data.big_nonogram).rows);
+                nonoGramHandler.createGrid(item_data.getNonogramData(item_data.big_nonogram).rows, this);
             }
             else if (item_data.nonogram_size == NonogramSizes.MEDIUM)
             {
-                nonoGramHandler.createGrid(item_data.getNonogramData(item_data.medium_nonogram).rows);
+                nonoGramHandler.createGrid(item_data.getNonogramData(item_data.medium_nonogram).rows, this);
             }
             else
             {
-                nonoGramHandler.createGrid(item_data.getNonogramData(item_data.small_nonogram).rows);
+                nonoGramHandler.createGrid(item_data.getNonogramData(item_data.small_nonogram).rows, this);
             }
             GameObject nonogram = nonoGramHandler.getNonogram();
             nonogram.transform.position = transform.position;

@@ -6,6 +6,8 @@ public class Nonogram : MonoBehaviour
 {
     public bool completed = false;
 
+    private Item thisItem;
+
     public GameObject parent;
 
     private Dictionary<(bool, int), List<GameObject>> sides = new Dictionary<(bool, int), List<GameObject>>();
@@ -32,6 +34,11 @@ public class Nonogram : MonoBehaviour
 
     public void deleteGrid()
     {
+        if (thisItem != null)
+        {
+            thisItem.setNonoStarted(false);
+        }
+
         foreach(var g in grid)
         {
             Destroy(g.Value);
@@ -49,10 +56,11 @@ public class Nonogram : MonoBehaviour
 
         rightValues.Clear();
     }
-    public void createGrid(List<List<int>> map)
+    public void createGrid(List<List<int>> map, Item item)
     {
         parent.transform.position = new Vector3(0, 0, 0);
         deleteGrid();
+        thisItem = item;
 
         maxPos = new GridPos(-1, -1);
 
