@@ -19,7 +19,7 @@ public class Item : MonoBehaviour
         nonoGramHandler = n[0].GetComponent<Nonogram>();
 
         sprite_renderer = GetComponent<SpriteRenderer>();
-        sprite_renderer.sprite = item_data.sprite;
+        sprite_renderer.sprite = item_data.typeSprite;
     }
 
     void OnMouseOver()
