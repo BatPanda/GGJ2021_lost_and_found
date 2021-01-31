@@ -80,7 +80,7 @@ public class BubbleText : MonoBehaviour
             text.text = newText.Item2;
             width = newText.Item1 + offSet * 2;
         }
-        Debug.Log(width);
+
         bubble.size = new Vector2(width * 0.001f, yOffset + cutting * 0.12f);
     }
 

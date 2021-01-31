@@ -45,7 +45,7 @@ public class NongramTile : MonoBehaviour
             waitForUp = true;
             activated = !activated;
             sprite.sprite = (activated? activatedSprite : deactivatedSprite);
-            Debug.Log(nonogram.checkCompletion(position));
+            nonogram.checkCompletion(position);
         }
         if (Input.GetMouseButton(1) && !waitForUp)
         {

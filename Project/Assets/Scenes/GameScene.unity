@@ -592,6 +592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c61d30c0ff7684f45a70dbd332b92c48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  checkList: {fileID: 1682535997}
   timer: {fileID: 148678153}
   move: {fileID: 2142913485}
   playerText: {fileID: 1577824326}
@@ -636,12 +637,8 @@ MonoBehaviour:
   - Forever?
   - "Yeah, it doesn\u2019t feel right for me to leave yet."
   loseb: 0001000100
-  endConversationText:
-  - wwww
-  - ee
-  - r
-  - qrmniowonrioqeruibqwr
-  endChildTalking: 01010001
+  endConversationText: []
+  endChildTalking: 
 --- !u!4 &484005917
 Transform:
   m_ObjectHideFlags: 0
