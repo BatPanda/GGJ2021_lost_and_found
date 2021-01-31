@@ -12,6 +12,8 @@ public class TimerHandler : MonoBehaviour
 
     [SerializeField] private int m_secondsUntilGameOver = 120;
     public UnityEvent OnGameOver;
+    public UnityEvent OnGameWon;
+
 
     private int m_secondsLeft;
 
@@ -48,6 +50,18 @@ public class TimerHandler : MonoBehaviour
     {
         m_countdownText.text = $"{(m_secondsLeft / 60).ToString("00")}:{(m_secondsLeft % 60).ToString("00")}";
         m_coutdownImage.fillAmount = m_secondsLeft / (float)m_secondsUntilGameOver;
+    }
+
+    public void invokeWin(bool win)
+    {
+        if (win)
+        {
+            OnGameWon.Invoke();
+        }
+        else
+        {
+            OnGameOver.Invoke();
+        }
     }
 
     public void PlayAgain()

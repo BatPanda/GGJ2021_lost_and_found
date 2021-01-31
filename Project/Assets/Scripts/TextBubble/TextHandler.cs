@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 public class TextHandler : MonoBehaviour
@@ -33,6 +34,7 @@ public class TextHandler : MonoBehaviour
     private bool completed = false;
     private bool convoEnd = false;
 
+    private bool won = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,13 +76,17 @@ public class TextHandler : MonoBehaviour
             }
             conversationPlace++;
         }
-        else
+        else if (!convoEnd)
         {
             playerText.setVisibility(false);
             parentText.setVisibility(false);
             move.setInGame(true);
             move.totalMarkers = timer.startTimer();
             completed = true;
+        }
+        else
+        {
+            timer.invokeWin(won);
         }
     }
 
@@ -93,11 +99,12 @@ public class TextHandler : MonoBehaviour
         move.setInGame(false);
 
         int collected = checkList.GetNumberOfCompletedItems();
-
+        won = true;
         if (collected < 1)
         {
             endConversationText = lose;
             endChildTalking = loseb;
+            won = false;
         }
         else if (collected < 10)
         {
