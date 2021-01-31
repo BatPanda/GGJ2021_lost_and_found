@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerItems : MonoBehaviour
 {
+    public ChecklistManager checklist;
     public List<string> itemNames;
 
     // Start is called before the first frame update
@@ -12,15 +13,9 @@ public class PlayerItems : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void addItem(string item)
     {
-        Debug.Log("ADDING ITEM");
         itemNames.Add(item);
+        checklist.CompleteItem(item);
     }
 }
