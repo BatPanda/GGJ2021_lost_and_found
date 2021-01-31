@@ -18,8 +18,11 @@ public class BubbleText : MonoBehaviour
     public float yOffset = 0.26f;
     public float maxSize = 4;
 
+    private Color textColor;
+
     void Start()
     {
+        textColor = text.color;
         baseSize = bubble.size;
         this.updateText("example text. WARNING. this is an example text");
         setVisibility(visible);
@@ -37,7 +40,7 @@ public class BubbleText : MonoBehaviour
         if (_visible)
         {
             bubble.enabled = true;
-            text.color = new Color(0, 0, 0, 1);
+            text.color = textColor;
         }
         else
         {
@@ -48,23 +51,21 @@ public class BubbleText : MonoBehaviour
 
     public void flipTextBubble(bool pointingRight)
     {
-        if (bubble.flipX == pointingRight)
-         {
-             if (!bubble.flipX)
+        //if (bubble.flipX == pointingRight)
+        // {
+             if (!pointingRight)
              {
                  //bubble.transform.position = new Vector3(bubble.transform.position.x - bubble.size.x * bubble.transform.localScale.x, bubble.transform.position.y, bubble.transform.position.z);
-                 text.transform.position = new Vector3(text.transform.position.x + bubble.size.x * bubble.transform.localScale.x, text.transform.position.y, text.transform.position.z);
+                 text.transform.position = new Vector3(bubble.transform.position.x + (bubble.size.x - 0.05f) * bubble.transform.localScale.x, text.transform.position.y, text.transform.position.z);
              }
              else
              {
                  //bubble.transform.position = new Vector3(bubble.transform.position.x + bubble.size.x * bubble.transform.localScale.x, bubble.transform.position.y, bubble.transform.position.z);
-                 text.transform.position = new Vector3(text.transform.position.x - bubble.size.x * bubble.transform.localScale.x, text.transform.position.y, text.transform.position.z);
+                 text.transform.position = new Vector3(bubble.transform.position.x - 0.05f * bubble.transform.localScale.x, text.transform.position.y, text.transform.position.z);
              }
-         }
+         //}
         
         bubble.flipX = !pointingRight;
-
-        
     }
 
     public void updateText(string _text)

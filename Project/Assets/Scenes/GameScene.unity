@@ -562,6 +562,68 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &484005915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484005917}
+  - component: {fileID: 484005916}
+  m_Layer: 0
+  m_Name: TextHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &484005916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484005915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61d30c0ff7684f45a70dbd332b92c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: {fileID: 148678153}
+  move: {fileID: 2142913485}
+  playerText: {fileID: 1577824326}
+  parentText: {fileID: 1078929427}
+  conversationText:
+  - My.... child....
+  - What happened!!??
+  - I have passed on to the next stage in life. Death.
+  - '!!'
+  - Please.. Before I depart. Fetch me my favourite items.
+  - I... I cant remember where they are. But I Know there all here.
+  - 'I will! '
+  - 'I only have 30 seconds '
+  - What? But the timer says 2 minutes!
+  - '...'
+  - '   ...'
+  - '      ...'
+  - FINE! You get 2 minutes!
+  childTalking: 00010001000001000100000000
+--- !u!4 &484005917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484005915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 31.9023, y: 30.734268, z: -308.62125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &492019508
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -654,6 +716,56 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9153400648001892025, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293296950871949613, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293296950871949613, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293296950871949613, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.107
+      objectReference: {fileID: 0}
+    - target: {fileID: 1293296950871949613, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.431
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549453269716888323, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.34242615
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549453269716888323, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.69930136
+      objectReference: {fileID: 0}
+    - target: {fileID: 3549453269716888323, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 4746193610967745293, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: flip
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3484916186487536803, guid: 06f685eca36426e438cfd3e538800a6c,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4284612510
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 06f685eca36426e438cfd3e538800a6c, type: 3}
@@ -945,6 +1057,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 8835534907484506832}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1078929427 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4746193610967745293, guid: 06f685eca36426e438cfd3e538800a6c,
+    type: 3}
+  m_PrefabInstance: {fileID: 492019508}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e800aba92af6ca4e923b1fe0d17c097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1093351202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2876,6 +3000,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1522212071}
   m_CullTransparentMesh: 0
+--- !u!114 &1577824326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5098158213896869252, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+    type: 3}
+  m_PrefabInstance: {fileID: 8835534907484506832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e800aba92af6ca4e923b1fe0d17c097, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1653752961
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,12 +3403,12 @@ PrefabInstance:
     - target: {fileID: 8835534908351489484, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.62666
+      value: 32.706
       objectReference: {fileID: 0}
     - target: {fileID: 8835534908351489484, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.77896
+      value: 29.283
       objectReference: {fileID: 0}
     - target: {fileID: 8835534908351489484, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
@@ -3319,11 +3455,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3487537676250488766, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
-        type: 3}
-      propertyPath: m_MaskInteraction
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5258209388129713142, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
       propertyPath: markerSample
@@ -3335,10 +3466,25 @@ PrefabInstance:
       propertyPath: timeBetweenMarkers
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3487537676250488766, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1652575505959327652, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098158213896869252, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: flip
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3981603037444516394, guid: 5531f17ca60e6f74caf1a48c759fe9a6,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4278190080
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5531f17ca60e6f74caf1a48c759fe9a6, type: 3}

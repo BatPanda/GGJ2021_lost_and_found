@@ -18,9 +18,14 @@ public class TimerHandler : MonoBehaviour
     private void Awake()
     {
         m_secondsLeft = m_secondsUntilGameOver;
-        UpdateDisplay();
+        
+    }
 
+    public int startTimer()
+    {
+        UpdateDisplay();
         StartCoroutine(UpdateTimer());
+        return m_secondsUntilGameOver;
     }
 
     private IEnumerator UpdateTimer()
