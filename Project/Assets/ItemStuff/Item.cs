@@ -7,7 +7,7 @@ public class Item : MonoBehaviour
 
     private void Start() {
         sprite_renderer = GetComponent<SpriteRenderer>();
-        sprite_renderer.sprite = item_data.sprite;
+        sprite_renderer.sprite = item_data.typeSprite;
     }
 }
 
